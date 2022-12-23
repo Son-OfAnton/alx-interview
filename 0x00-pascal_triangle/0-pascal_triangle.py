@@ -1,4 +1,4 @@
-def pascal_triagle(n):
+def pascal_triangle(n):
       res = [[1]]
         
       for i in range(n - 1):
