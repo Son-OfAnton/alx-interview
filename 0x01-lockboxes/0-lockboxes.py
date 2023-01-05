@@ -1,4 +1,4 @@
-#!/usr/bin python3
+#!/usr/bin/python3
 
 def canUnlockAll(boxes: List) -> bool:
     """
@@ -16,9 +16,10 @@ def canUnlockAll(boxes: List) -> bool:
     for k in range(1, len(boxes) - 1):
         boxes_checked = False
         for idx in range(len(boxes)):
-            boxes_checked = k in boxes[idx] and k != idx
+            boxes_checked = k in boxes[idx] and k != idx 
             if boxes_checked:
-                break
+                break   
         if boxes_checked is False:
             return boxes_checked
+        
     return True
