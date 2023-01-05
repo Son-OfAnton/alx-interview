@@ -1,7 +1,5 @@
 #!/usr/bin python3
 
-from typing import *
-
 def canUnlockAll(boxes: List) -> bool:
     """
     accepts list of boxes(lists) containing
