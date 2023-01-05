@@ -2,13 +2,10 @@
 
 def canUnlockAll(boxes):
     """
-    accepts list of boxes(lists) containing
-    keys to other boxes. 
-    The first box is always opened.
-    
-    Return True if all boxes can be opened else False
+    Determines whether a series of locked boxes can be opened
+    based on keys that can be attained.
+    Solution to the lockboxes problem
     """
-    
     if (type(boxes)) is not list:
         return False
     elif (len(boxes)) == 0:
@@ -17,10 +14,9 @@ def canUnlockAll(boxes):
     for k in range(1, len(boxes) - 1):
         boxes_checked = False
         for idx in range(len(boxes)):
-            boxes_checked = k in boxes[idx] and k != idx 
+            boxes_checked = k in boxes[idx] and k != idx
             if boxes_checked:
-                break   
+                break
         if boxes_checked is False:
             return boxes_checked
-        
     return True
