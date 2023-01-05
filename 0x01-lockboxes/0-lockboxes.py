@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-def canUnlockAll(boxes: List) -> bool:
+def canUnlockAll(boxes):
     """
     accepts list of boxes(lists) containing
     keys to other boxes. 
@@ -8,6 +8,7 @@ def canUnlockAll(boxes: List) -> bool:
     
     Return True if all boxes can be opened else False
     """
+    
     if (type(boxes)) is not list:
         return False
     elif (len(boxes)) == 0:
