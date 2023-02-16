@@ -1,15 +1,12 @@
 #!/usr/bin/python3
-"""
-This function rotates a matrix 90 degrees clockwise
-by transposing it first and reversing each row hence
-it is inplace.
+"""2D matrix rotation module.
 """
 
 
 def rotate_2d_matrix(matrix):
-	""" This function rotates a matrix 90 degrees clockwise """
-	
-	if type(matrix) != list:
+    """Rotates an m by n 2D matrix in place.
+    """
+    if type(matrix) != list:
         return
     if len(matrix) <= 0:
         return
